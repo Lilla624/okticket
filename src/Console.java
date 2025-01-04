@@ -23,6 +23,7 @@ public class Console {
   }
   private String input(String message) {
     System.out.print(message);
+    @SuppressWarnings("resource")
     Scanner scanner = new Scanner(System.in);
     String input = scanner.nextLine();
     // scanner.close();
